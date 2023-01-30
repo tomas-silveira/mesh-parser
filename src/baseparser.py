@@ -3,6 +3,21 @@ import matplotlib.pyplot as plt
 
 class base_parser(object):
     def __init__(self, filetype=None):
+        """Base parser class
+
+        This is the base class for parsers to work with CSD.
+        CSD works with the data structures described in geo_types,
+        that is:
+            * points (x, y, z)
+            * tris (p1, p2, p3)
+            * quads (p1, p2, p3, p4)
+        Both tri and quad objects must have their points oriented
+        anti-clockwise, such that the element's normal is pointing
+        in +z
+
+        Args:
+            filetype (string): type of file used to parse
+        """
         self.filetype = filetype
         self.points = []
         self.tris = []
@@ -24,6 +39,12 @@ class base_parser(object):
         return self.quads
 
     def show_info(self):
+        """Show info
+
+        Prints some useful info about the parsed file:
+            * number of number of points
+            * number of elements (tris and quads)
+        """
 
         n_points = len(self.points)
         n_tris = len(self.tris)
@@ -35,6 +56,10 @@ class base_parser(object):
         print(f'Number of quads: {n_quads}')
 
     def show_2d(self):
+        """Show 2d
+
+        Plots the mesh from the parsed file
+        """
         # draw tri elements
         for tri in self.tris:
             x = [tri.p1.x, tri.p2.x, tri.p3.x]

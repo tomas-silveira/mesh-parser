@@ -9,6 +9,14 @@ QUAD = 3
 
 class gmsh_parser(base_parser):
     def __init__(self, filename):
+        """GMSH parser
+
+        Implementation of a parser for GMSH .msh files
+        NOTE: .msh files must be version>=4
+
+        Args:
+            filename (string): name of gmsh .msh file
+        """
         self.filename = filename
         super().__init__('gmsh')
 

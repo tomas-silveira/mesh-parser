@@ -1,6 +1,5 @@
 # MESH PARSER
 
-A Simple parser for mesh files into a unified format. Currently supports the following formats:
+A Simple parser for mesh files into a format usable with CSD. Currently supports the following formats:
 
 * GMSH
-* DXF
