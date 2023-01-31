@@ -13,7 +13,7 @@ Note: For the tri and quad elements, points are parsed anti-clockwise, such that
 
 ## Installation
 
-To intall download this repo and run the following command:
+To intall, download this repo and run the following command:
 
 `pip install -e .`
 
@@ -27,7 +27,7 @@ In order to parse the file, we just need to call the `parse()` method:
 
 `rect.parse()`
 
-We can now access the parsed objects with `rect.get_points()`, `rect.get_tris` and `rect_get_quads`. The method `show_info()` prints some useful info about the parsed mesh:
+We can now access the parsed objects with `rect.get_points()`, `rect.get_tris()` and `rect_get_quads()`. The method `show_info()` prints some useful info about the parsed mesh:
 
 ```
 -----------------------------------
