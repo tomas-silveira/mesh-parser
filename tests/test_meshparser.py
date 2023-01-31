@@ -1,7 +1,7 @@
 import unittest
 
-from src.geo_types import point, quad
-from src.gmsh import gmsh_parser
+from meshparser.geo_types import point, quad
+from meshparser.gmsh import gmsh_parser
 
 
 class TestGMSH(unittest.TestCase):

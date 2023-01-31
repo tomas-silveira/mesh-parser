@@ -1,7 +1,7 @@
 import numpy as np
 
-from src.baseparser import base_parser
-from src.geo_types import point, quad, tri
+from .baseparser import base_parser
+from .geo_types import point, quad, tri
 
 TRI = 2
 QUAD = 3

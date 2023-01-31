@@ -6,8 +6,7 @@ class base_parser(object):
         """Base parser class
 
         This is the base class for parsers to work with CSD.
-        CSD works with the data structures described in geo_types,
-        that is:
+        CSD works with the data structures described in geo_types:
             * points (x, y, z)
             * tris (p1, p2, p3)
             * quads (p1, p2, p3, p4)
